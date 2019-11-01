@@ -7,3 +7,13 @@ it('renders without crashing', () => {
   ReactDOM.render(<App />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
+
+test('renders NavBar component', () => {
+  const wrapper = rtl.render(<NavBar />);
+  console.log(wrapper.debug());
+});
+
+test('renders Player component', () => {
+  const wrapper = rtl.render(<Player />);
+  console.log(wrapper.debug());
+});
